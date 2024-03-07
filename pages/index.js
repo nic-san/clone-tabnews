@@ -1,4 +1,5 @@
 import Image from 'next/image';
+
 function Home() {
     var html = (
         <div class="col-12">
@@ -60,6 +61,14 @@ function Home() {
                         />
                     </span>
                 </div>
+            </div>
+            <div class="col-12">
+                <span>
+                    Vídeo especial 💖
+                    <video width="320" height="240" controls>
+                        <source src="/videos/especialdmais.mp4" type="video/mp4" />
+                    </video>
+                </span>
             </div>
         </div>
     );
