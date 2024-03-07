@@ -1,11 +1,68 @@
-function Home(){
-    var casadodu = <span>Primeira foto juntos 😍: <img src='contents/imgs/casadodu.jpg'/></span>;
-    var suspiro = <span>Foto fofa demaisss 😍: <img src='contents/imgs/suspiro.jpg'/></span>;
-    var passeimal = <span>Meu nervosismo atoa 🤣: <img src='contents/imgs/passeimal.jpg'/></span>;
-    var violao = <span>Você canta muitooooo 😊: <img src='contents/imgs/violao.jpg'/></span>;
-    var alianca = <span>Nossa primeira vitória como casal 🙌💕💑:<img src='contents/imgs/alianca.jpg'/></span>;
-    var texto = <h1>💕💕💕💕💕Ouuuu, mor, eu te amo muuuuuuitão! Se você me ama muuuuuuitão me manda uma mensagem falando! 💕💕💕💕💕</h1>;
-    var html = texto+""+casadodu+""+suspiro+""+passeimal+""+violao+""+alianca;
+import Image from 'next/image';
+function Home() {
+    var html = (
+        <div class="col-12">
+            <h1>
+                💕💕💕💕💕Ouuuu, mor, eu te amo muuuuuuitão! Se você me ama
+                muuuuuuitão me manda uma mensagem falando! 💕💕💕💕💕
+            </h1>
+            <div class="col-12" style={{ display: 'inline-flex', justifyContent: 'space-evenly', alignItems: 'stretch', flexDirection: 'row' }}>
+                <div class="row">
+                    <span>
+                        Primeira foto juntos 😍
+                        <Image
+                            src="/images/casadodu.png"
+                            width="165"
+                            height="220"
+                        />
+                    </span>
+                </div>
+
+                <div class="row">
+                    <span>
+                        Você canta muiitoo 😊
+                        <Image
+                            src="/images/violao.png"
+                            width="165"
+                            height="220"
+                        />
+                    </span>
+                </div>
+
+                <div class="row">
+                    <span>
+                        Meu nervosismo atoa 🤣
+                        <Image
+                            src="/images/passeimal.png"
+                            width="165"
+                            height="220"
+                        />
+                    </span>
+                </div>
+
+                <div class="row">
+                    <span>
+                        Nossa primeira vitória como casal 🙌💕💑
+                        <Image
+                            src="/images/alianca.png"
+                            width="250"
+                            height="300"
+                        />
+                    </span>
+                </div>
+                <div class="row">
+                    <span>
+                        Foto fofa demaisss 😍
+                        <Image
+                            src="/images/suspiro.png"
+                            width="250"
+                            height="300"
+                        />
+                    </span>
+                </div>
+            </div>
+        </div>
+    );
     return html;
 }
 
